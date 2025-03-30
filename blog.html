@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chanthy Plants</title>
+   <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <header>
+        
+        <!-- Navigation Bar -->
+        <img src="/image/my logo1.png" alt="Chanthy Plants Logo"> <!-- Logo Image -->
+        <h1>Chanthy Plants</h1>
+        <nav>
+            <ul>
+                <li><a href="/Assignment1.html">Home</a></li>
+                <li><a href="/about us.html">About Us</a></li>
+                <li><a href="/service.html">Services</a></li>
+                <li><a href="/Assignment1.html">Gallery</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="account-form">
+            <div class="button">
+                <a href="/signin.html">sign in</a>
+                <a href="/signup.html">sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Description Section -->
+    <div class="description">
+        <h2>Get in Touch with Chanthy Plants 🌿</h2>
+        <p>
+            At <strong>Chanthy Plants</strong>, we’re always excited to hear from our customers! Whether you have a question about our plant varieties, need advice on plant care, or simply want to share your love for greenery with us, we’re here to help. Our team is dedicated to providing you with the best shopping experience and the highest quality plants.
+        </p>
+
+        <p>We offer a wide selection of indoor and outdoor plants, from lush foliage to colorful flowers, and everything in between. If you’re interested in finding the perfect plant for your space or have any queries about our offerings, feel free to reach out to us using the form below.</p>
+
+        <ul>
+            <li>Inquire About Plants: Curious about our specific plant varieties, care instructions, or availability? We're happy to assist!</li>
+            <li>Order Requests: Looking to place an order or need assistance with a purchase? Our team will make it easy for you.</li>
+            <li>Plant Care Tips: Need help with plant care or wondering which plants are perfect for your home or office? We provide expert advice.</li>
+            <li>Feedback & Suggestions: Your experience matters to us! Share your thoughts or suggestions for improving our services.</li>
+        </ul>
+
+        <p><strong>We can’t wait to bring nature to your doorstep!</strong></p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="wrapper">
+        <div class="title">We'd Love to Hear From You!</div>
+        <form action="submit_form.php" method="POST">
+            <div class="row">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="row">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="row">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+            </div>
+
+            <div class="row">
+                <label for="plant-interest">Are you interested in specific plants?</label>
+                <select id="plant-interest" name="plant-interest">
+                    <option value="flowers">Flowers</option>
+                    <option value="indoor-plants">Indoor Plants</option>
+                    <option value="outdoor-plants">Outdoor Plants</option>
+                    <option value="succulents">Succulents</option>
+                    <option value="herbs">Herbs</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

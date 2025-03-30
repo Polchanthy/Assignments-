@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request - Chanthy Plants</title>
+   <link rel="stylesheet" href="/service.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+    <header>
+        <img src="/image/my logo1.png" alt="Chanthy Plants Logo"> <!-- Logo Image -->
+        <h1>Chanthy Plants</h1>
+        <nav>
+            <ul>
+                <li><a href="/Assignment1.html">Home</a></li>
+                <li><a href="/about us.html">About Us</a></li>
+                <li><a href="/service.html">Services</a></li>
+                <li><a href="/Assignment1.html">Gallery</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="account-form">
+            <div class="button">
+                <a href="/signin.html">sign in</a>
+                <a href="/signup.html">sign up</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Service Request Form -->
+    <div class="service-form-container">
+        <h2>Request Our Services</h2>
+        <form action="submit_service_request.php" method="post">
+            <!-- Customer Information -->
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <!-- Service Request -->
+            <div class="form-group">
+                <label for="service">Select Service</label>
+                <select id="service" name="service" required>
+                    <option value="plant-care">Plant Care Advice</option>
+                    <option value="delivery">Home Plant Delivery</option>
+                    <option value="gardening-consultation">Gardening Consultation</option>
+                    <option value="plant-maintenance">Plant Maintenance</option>
+                </select>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="details">Additional Details</label>
+                <textarea id="details" name="details" placeholder="Describe your needs or ask questions (optional)"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Chanthy Plants | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

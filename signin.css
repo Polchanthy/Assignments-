@@ -1,0 +1,196 @@
+/* Body and Form Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5f0; /* Light teal background */
+    display: flex;
+    flex-direction: column; /* Stack header and form vertically */
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    background: #f0f8f7; /* Slightly lighter green */
+}
+
+/* Header Styles */
+header {
+    background-color: #66bb6a; /* Lighter green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header img {
+    max-width: 150px; /* Logo size */
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Account Form Styles */
+.account-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.account-form .button a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background: #4caf50; /* Slightly darker than header */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.account-form .button a:hover {
+    background: #388e3c; /* Even darker on hover */
+}
+
+/* Wrapper for the form */
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.1); /* Lighter shadow for depth */
+    margin-top: 30px; /* Adds space below header */
+}
+
+.wrapper .title {
+    height: 120px;
+    background: #4caf50; /* Lighter green for title */
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form {
+    padding: 25px 35px;
+}
+
+.wrapper form .row {
+    height: 60px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 90%;
+    outline: none;
+    padding-left: 70px;
+    border-radius: 5px;
+    border: 1px solid #c1e0d8; /* Lighter border for inputs */
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: #66bb6a; /* Lighter green focus */
+}
+
+form .row input::placeholder {
+    color: #bbb; /* Lighter placeholder text */
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 55px;
+    height: 100%;
+    color: #fff;
+    font-size: 22px;
+    background: #66bb6a; /* Lighter green */
+    border: 1px solid #66bb6a;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
+    margin-top: 12px;
+}
+
+.wrapper form .pass a {
+    color: #66bb6a;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #66bb6a; /* Lighter green */
+    border: 1px solid #66bb6a;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background: #388e3c; /* Darker green on hover */
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 17px;
+}
+
+.wrapper form .signup-link a {
+    color: #66bb6a;
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .wrapper .title {
+        font-size: 24px;
+    }
+
+    .wrapper form .row {
+        margin-top: 10px;
+    }
+
+    .account-form .button a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

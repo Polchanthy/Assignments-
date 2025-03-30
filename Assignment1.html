@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabulous Flowers - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for star icons -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/image/my logo1.png" alt="Chanthy Plants Logo"> <!-- Logo Image -->
+        <h1>Chanthy Plants</h1>
+        <nav>
+            <ul>
+                <li><a href="/Assignment1.html">Home</a></li>
+                <li><a href="/about us.html">About Us</a></li>
+                <li><a href="/service.html">Services</a></li>
+                <li><a href="/Assignment1.html">Gallery</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="account-form">
+            <div class="button">
+                <a href="/signin.html">sign in</a>
+                <a href="/signup.html">sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="home">
+        <h2>Welcome to Chanthy Plants!</h2>
+        <p>Your one-stop shop for beautiful floral arrangements and gifts.</p>
+    </div>
+    <div class="container" id="gallery">
+        <h2>Gallery</h2>
+        <p>Explore our beautiful floral arrangements in our gallery.</p>
+        <div class="gallery">
+            <img src="image/g14.webp" alt="Flower Arrangement 1">
+            <img src="image/g5.webp" alt="Flower Arrangement 2">
+            <img src="image/g6.webp" alt="Flower Arrangement 3">
+            <img src="image/g7.webp" alt="Flower Arrangement 4">
+            <img src="image/g9.webp" alt="Flower Arrangement 5">
+            <img src="image/gruop of plants2.webp" alt="Flower Arrangement 6">
+            <img src="image/gruop of plants3.webp" alt="Flower Arrangement 6">
+        </div>
+    </div>
+
+    <div class="container" id="products">
+        <h2>Our Products</h2>
+        <p>Check out our stunning selection of flowers available for purchase.</p>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="filterProducts()">
+            <button onclick="filterProducts()">Search</button>
+        </div>
+
+        <div class="products" id="productList">
+            <div class="product">
+                <img src="image/Money plant.jpg" alt="Product 1">
+                <h3>Aglaonema</h3>
+                <p class="price">$25.00</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> 
+                </p>
+                <div class="product-buttons">
+                    <button onclick="buyProduct('Product Name 1')">Buy</button>
+                    <button onclick="showDetails('Product Name 1')">Details</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/Golden Pothous.jpg" alt="Product 2">
+                <h3>Golden Pothous</h3>
+                <p class="price">$30.00</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                </p>
+                <div class="product-buttons">
+                    <button onclick="buyProduct('Product Name 2')">Buy</button>
+                    <button onclick="showDetails('Product Name 2')">Details</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/Monstera-deliciosa.webp" alt="Product 3">
+                <h3>Monstera</h3>
+                <p class="price">$49.90</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i> 
+                </p>
+                <div class="product-buttons">
+                    <button onclick="buyProduct('Product Name 3')">Buy</button>
+                    <button onclick="showDetails('Product Name 3')">Details</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/Aglaonema-Diamond-Bay-Chinese-Evergreen-21x50cm-Charlie-Plant-Pot-Black-Washed-25x24cm_3554baec-182e-4efa-91f7-34188519fd7e_1200x (1).webp" alt="Product 3">
+                <h3>swiss cheese</h3>
+                <p class="price">$29.50</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                </p>
+                <div class="product-buttons">
+                    <button onclick="buyProduct('Product Name 3')">Buy</button>
+                    <button onclick="showDetails('Product Name 3')">Details</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/61jd1mDOJML._AC_UF1000,1000_QL80_.jpg" alt="Product 3">
+                <h3>Money plant</h3>
+                <p class="price">$25.00</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> 
+                </p>
+                <div class="product-buttons">
+                    <button onclick="buyProduct('Product Name 3')">Buy</button>
+                    <button onclick="showDetails('Product Name 3')">Details</button>
+                </div>
+            </div> <div class="product">
+                <img src="image/MonsteraThaiConstellation_2.webp" alt="Product 3">
+                <h3>money chinese</h3>
+                <p class="price">$16.90</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                </p>
+                <div class="product-buttons">
+                    <button onclick="buyProduct('Product Name 3')">Buy</button>
+                    <button onclick="showDetails('Product Name 3')">Details</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Chanthy Plants. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/14rthn4pVr/" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="http://t.me/Chanthypol"title="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function filterProducts() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const products = document.getElementById('productList').getElementsByClassName('product');
+
+            for (let i = 0; i < products.length; i++) {
+                const productName = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (productName.includes(filter)) {
+                    products[i].style.display = '';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+
+        function buyProduct(productName) {
+            alert(`You have selected to buy ${productName}.`);
+        }
+
+        function showDetails(productName) {
+            alert(`Details for ${productName}: This is a great product!`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chanthy Plants</title>
+   <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <header>
+            <img src="/image/my logo1.png" alt="Chanthy Plants Logo"> <!-- Logo Image -->
+            <h1>Chanthy Plants</h1>
+            <nav>
+                <ul>
+                    <li><a href="/Assignment1.html">Home</a></li>
+                    <li><a href="/about us.html">About Us</a></li>
+                    <li><a href="/service.html">Services</a></li>
+                    <li><a href="/Assignment1.html">Gallery</a></li>
+                    <li><a href="/product.html">Products</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="account-form">
+                <div class="button">
+                    <a href="/signin.html">sign in</a>
+                    <a href="/signup.html">sign up</a>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <!-- Contact Form -->
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form.php" method="post">
+            <!-- Customer Information -->
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Enter your message here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Chanthy Plants | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/14rthn4pVr/" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="http://t.me/Chanthypol"title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+    </footer>
+
+</body>
+</html>
